@@ -11,9 +11,9 @@ from sklearn.preprocessing import StandardScaler
 from flask_marshmallow import Marshmallow
 from marshmallow_sqlalchemy import SQLAlchemyAutoSchema
 
-import datetime
-scaler = StandardScaler()
 
+scaler = StandardScaler()
+import datetime
 
 app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///employees.db'
